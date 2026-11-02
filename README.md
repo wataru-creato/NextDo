@@ -35,3 +35,8 @@
       
   ## 使い方
 
+  ## キャプチャー
+
+  ![スクショ1](./img/NextDo_pic1.phg)
+
+  ![スクショ2](./img/NextDo_pic2.phg)
