@@ -1,7 +1,7 @@
 # NextDo
 
   ## プロジェクト名
-  NextDo
+  NextDo（プロト版）
 
   ## プロジェクトの目的
   - Typescriptを使ってみる
