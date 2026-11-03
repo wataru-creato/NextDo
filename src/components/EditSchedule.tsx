@@ -1,7 +1,8 @@
 import {useState, useEffect} from 'react'
+import type { Schedule } from '../types/Schedule';
 
 type Props={
-    targetTodo: { scheduleContent: string, startTime: string, endTime: string } | undefined;
+    targetTodo: Schedule | undefined;
     onSave: (content: string, startTime: string, endTime: string) => void;
 }
 

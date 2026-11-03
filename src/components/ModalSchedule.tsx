@@ -1,7 +1,8 @@
 import {useState,useEffect } from "react";
+import type { Schedule } from '../types/Schedule';
 
 type Props={
-    currentTime: string, startTime: string, endTime: string, scheduleContent: string, closestSchedule: any, nextSchedule: any};
+    currentTime: string, startTime: string, endTime: string, scheduleContent: string, closestSchedule: Schedule, nextSchedule: Schedule | null};
 
 
 function ModalSchedule({currentTime,startTime,endTime,scheduleContent,closestSchedule,nextSchedule}: Props){
