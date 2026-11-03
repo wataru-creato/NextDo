@@ -1,6 +1,6 @@
-// import EditSchedule from "./EditSchedule";
+import type { Schedule } from '../types/Schedule';
 
-function TimeSchedule({addSchedule,DeleteCheckFlag, editCheckFlag, onCheckChange,editSchedule}:{addSchedule:{id:number,scheduleContent: string, startTime: string, endTime: string}[], deleteSchedule: (id: number) => void, editSchedule:(id:number)=>void,DeleteCheckFlag: boolean, editCheckFlag:boolean,onCheckChange: (id: number) => void}){ 
+function TimeSchedule({addSchedule,DeleteCheckFlag, editCheckFlag, onCheckChange,editSchedule}:{addSchedule:Schedule[], deleteSchedule: (id: number) => void, editSchedule:(id:number)=>void,DeleteCheckFlag: boolean, editCheckFlag:boolean,onCheckChange: (id: number) => void}){ 
 return(
     <div className="TimeSchedule">
         {Array.from({ length: 24 }, (_, i) => {

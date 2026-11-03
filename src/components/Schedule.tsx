@@ -1,15 +1,12 @@
 import {useState,useEffect} from 'react';
+import type { ScheduleInput } from '../types/Schedule';
 
 
-function Schedule({onChange, resetInputFlag,isSubmitting}: {onChange: (data: {scheduleContent: string, startTime: string, endTime: string}) => void, resetInputFlag: boolean, isSubmitting: boolean}){
+function Schedule({onChange, resetInputFlag,isSubmitting}: {onChange: (data: ScheduleInput) => void, resetInputFlag: boolean, isSubmitting: boolean}){
     
 const [inputScheduleContent,setInputScheduleContent]=useState<string>('');
 const [inputStartTime,setInputStartTime]=useState<string>('');
 const [inputEndTime,setInputEndTime]=useState<string>('');
-
-//   const [startTime,setStartTime]=useState<string>('');
-//   const [endTime,setEndTime]=useState<string>('');
-//   const [scheduleContent,setScheduleContent]=useState<string>('');
 
 
 
@@ -20,12 +17,6 @@ useEffect(() => {
 }, [resetInputFlag]);
 
 
-// const GetScheduleContent=(data: {scheduleContent: string, startTime: string, endTime: string})=>{
-//     setInputScheduleContent(data.scheduleContent);
-//     setInputStartTime(data.startTime);
-//     setInputEndTime(data.endTime);
-//   }
-  
 const handleAddSchedule=()=>{
   if(inputScheduleContent ==='' || inputStartTime ==='' || inputEndTime ===''){
     console.log('すべてのフィールドを入力してください');
@@ -44,11 +35,7 @@ const handleAddSchedule=()=>{
         startTime:inputStartTime,
         endTime:inputEndTime    
   })
-  // if(scheduleContent !=='' || startTime !=='' || endTime !==''){
-  //   setResetInputFlag(prevFlag => !prevFlag);
-  //   return ;
-  // }
-
+  
 
 }
 
