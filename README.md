@@ -1,7 +1,7 @@
 # NextDo
 
   ## プロジェクト名
-  NextDo
+  NextDo（プロト版）
 
   ## プロジェクトの目的
   - Typescriptを使ってみる
@@ -37,6 +37,6 @@
 
   ## キャプチャー
 
-  ![スクショ1](./img/NextDo_pic1.phg)
+  ![スクショ1](./img/NextDo_pic1.png)
 
-  ![スクショ2](./img/NextDo_pic2.phg)
+  ![スクショ2](./img/NextDo_pic2.png)
